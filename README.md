@@ -1,8 +1,6 @@
 # multiplicative-persistence.rock
 Function to calculate the multiplicative persistence and each step for any number, implemented in the Rockstar Programming Language.
 
-# Background
-
 # The code
 ```
 My life is resistless
@@ -67,3 +65,5 @@ Build my anxiety up
 
 Forever taking 277777788888899
 ```
+
+# Background
