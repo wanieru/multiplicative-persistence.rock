@@ -1,5 +1,5 @@
 # multiplicative-persistence.rock
-Function to calculate the multiplicative persistence and each step for any number, implemented in the Rockstar Programming Language. Try running the code on [https://codewithrockstar.com/online].
+Function to calculate the multiplicative persistence and each step for any number, implemented in the Rockstar Programming Language. Try running the code on https://codewithrockstar.com/online.
 
 # What does it do?
 Multiplicative Persistence means multiplying every digit of a number together. Then, you do the same for the resulting number, and keep doing it until you have until one digit left. The amount of steps it took to get to one digit is that number's "Multiplicate Persistence". `277777788888899` is the currently smallest known number with the highest multiplicative persistence (11).
