@@ -81,8 +81,8 @@ number = (number - digit) / 10 = 281
 digit = lastDigit(number) = 1
 ...
 ```
-The easiest way to extract the last digit is with the modulo operator: `2819 % 10 = 9`. The only way to implement this operator without the ability to round numbers is my subtracting the divisor over and over until you get a smaller number. But I wanted the program to not take hours to evaluate when using a number like `277777788888899` so I had to find a new plan.
-Instead of using the modulo operator, I now find the largest power of 10 which is smaller or equal to the number, then subtract that. I can keep doing this until I have a number smaller than 10, which is always the last digit.
+The easiest way to extract the last digit is with the modulo operator: `2819 % 10 = 9`. The most straight-forward way to implement this operator without the ability to round numbers is by subtracting the divisor over and over until you get a smaller number. But I wanted the program to not take hours to evaluate when using a number like `277777788888899` so I had to find a loop-hole.
+Instead, I find the largest power of 10 which is smaller or equal to the number, then subtract that. I can keep doing this until I have a number smaller than 10, which is always the last digit.
 
 # Number Length
 In a simlar problem, I need to know how many digits long a number is. This uses a similar technique. Find the smallest power of ten which is greater than the number and count the amount of zeroes (the exponent). That's the length of the number in base 10.
