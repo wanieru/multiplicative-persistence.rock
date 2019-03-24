@@ -73,7 +73,7 @@ Forever taking 277777788888899
 I had been looking for a reasonable program to try out the [Rockstar language](https://github.com/RockstarLang/rockstar). This idea came to me while I was watching [a video from Numberphile on Multiplicative Persistence](https://www.youtube.com/watch?v=Wim9WJeDTHQ). When Matt Parker started implementing the function in Python in the video, I decided I'd give it a shot in Rockstar.
 
 # Digit Extraction and Multiplcation
-Rockstar doesn't provide functions to convert integers to strings, or even manipulate strings to begin with. To multiply each digit of a number together I therefore need a function which can get me a single digit from a number's base 10 representation. If I can get the last digit from the number, I could then subtract that from the original number, and divide it by 10 and then repeat the process.
+As far as I knopw, Rockstar doesn't provide functions to convert integers to strings, or even manipulate strings very much to begin with. To multiply each digit of a number together I therefore need a function which can get me a single digit from a number's base 10 representation. If I can get the last digit from the number, I could then subtract that from the original number, and divide it by 10 and then repeat the process.
 ```
 number = 2819
 digit = lastDigit(number) = 9
