@@ -1,0 +1,61 @@
+Empty is 0
+One is 1
+Ten is 10
+NumberLength takes Number
+Counter is 1
+Divisor is 10
+While Divisor is greater than Counter
+If Number over Divisor is smaller than One
+Give back Counter
+		(End if)
+Put Divisor of Ten into Divisor
+Build Counter up
+		(End while)
+		(End NumberLength)
+LastDigit takes Number
+Subtractor is 10
+While Number is as high as Ten
+Put Subtractor over Ten into Subtractor
+While Subtractor is as small as Number
+Put Subtractor of Ten into Subtractor
+		(End while)
+Put Subtractor over Ten into Subtractor
+Put Number without Subtractor into Number
+		(End while)
+Give back Number
+		(End LastDigit)
+DigitMultiplication takes Number
+CurrentProduct is null
+Put NumberLength taking Number into CurrentLength
+DigitCounter is 0
+While DigitCounter is smaller than CurrentLength
+Put LastDigit taking Number into Digit
+if Digit is nothing
+Give back Digit
+		(End if)
+if CurrentProduct aint null
+Put CurrentProduct of Digit into CurrentProduct
+		(End if)
+if CurrentProduct is null
+Put Digit into CurrentProduct
+		(End if)
+Put Number without Digit into Number
+Put Number over Ten into Number
+Build DigitCounter up
+		(End while)
+Give back CurrentProduct
+(End DigitMultiplcation)
+Persistance takes Number
+Steps is 0
+While Empty is 0
+Shout Number
+Put NumberLength taking Number into Length
+if Length is One
+Shout Steps
+Give back Steps
+		(End if)
+Put DigitMultiplication taking Number into Number
+Build Steps up
+		(End while)
+		(End Persistence)
+Persistance taking 277777788888899
